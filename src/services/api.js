@@ -1,4 +1,7 @@
-const BASE_URL = 'https://yapper-s-backend.onrender.com/api';
+if (!import.meta.env.VITE_API_URL) {
+  console.error("Missing required environment variable: VITE_API_URL");
+}
+const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
 export const getMeetups = async () => {
   const response = await fetch(`${BASE_URL}/meetups`);
@@ -12,7 +15,7 @@ export const submitJoinRequest = async (data) => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
   });
-  
+
   if (!response.ok) {
     const errData = await response.json().catch(() => ({}));
     throw new Error(errData.message || 'Failed to submit request');
