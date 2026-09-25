@@ -1,0 +1,79 @@
+.upcoming-meetups-section {
+  background-color: #E60503;
+  padding: 80px 20px;
+  color: #FFFFFF;
+}
+
+.upcoming-meetups-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.upcoming-meetups-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 60px;
+  gap: 40px;
+}
+
+.upcoming-meetups-title-area {
+  flex: 1;
+}
+
+.upcoming-meetups-badge {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.upcoming-meetups-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+.upcoming-meetups-desc-area {
+  flex: 0 0 300px;
+}
+
+.upcoming-meetups-description {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.upcoming-meetups-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 900px) {
+  .upcoming-meetups-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .upcoming-meetups-desc-area {
+    flex: auto;
+  }
+  
+  .upcoming-meetups-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .upcoming-meetups-grid {
+    grid-template-columns: 1fr;
+  }
+}

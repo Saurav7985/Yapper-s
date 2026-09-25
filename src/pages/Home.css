@@ -1,0 +1,28 @@
+.home-page {
+  width: 100%;
+}
+
+.placeholder-section {
+  padding: 100px 24px;
+  text-align: center;
+}
+
+.placeholder-section.bg-light {
+  background-color: #F0F0F0;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.placeholder-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  color: #1A1A1A;
+}
+
+.placeholder-section p {
+  font-size: 1.2rem;
+  color: #666666;
+}
