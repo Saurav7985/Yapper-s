@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:5000/api';
+const BASE_URL = 'https://yapper-s-backend.onrender.com/api';
 
 export const getMeetups = async () => {
   const response = await fetch(`${BASE_URL}/meetups`);
