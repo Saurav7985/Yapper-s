@@ -34,7 +34,7 @@ const JoinYappers = () => {
         setErrorMsg(res.message || 'Something went wrong');
       }
     } catch (err) {
-      setErrorMsg('Failed to submit. Please try again.');
+      setErrorMsg(err.message || 'Failed to submit. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
